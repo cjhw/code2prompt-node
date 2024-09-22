@@ -1,0 +1,20 @@
+Project Path: {{absoluteCodePath}}
+
+Source Tree:
+```
+{{sourceTree}}
+```
+
+{{#each files}}
+`{{path}}`:
+```
+{{code}}
+```
+{{/each}}
+
+{{#if gitDiff}}
+Git Diff:
+```
+{{gitDiff}}
+```
+{{/if}}
