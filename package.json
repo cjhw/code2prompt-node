@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "A tool to generate LLM prompts from codebases",
   "main": "dist/index.js",
+  "type": "module",
   "bin": {
-    "code2prompt": "dist/index.js"
+    "code2prompt1": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "start": "tsx src/index.ts"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.18",
+    "tsup": "^8.3.0",
     "tsx": "^4.19.1",
     "typescript": "^5.0.4"
   }
